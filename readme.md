@@ -1,5 +1,5 @@
 # Qaz++
-**Qaz++ is a programming language based on C++ that allows Kazakh-speaking programmers to write code in their native language.**
+**Qaz++ is a kazakh programming language syntax based on C++ that allows Kazakh-speaking programmers to write code in their native language.**
 
 <a href="https://github.com/silvermete0r/QazKosuKosu">
     <img src="https://img.shields.io/github/stars/silvermete0r/QazKosuKosu?style=social">
