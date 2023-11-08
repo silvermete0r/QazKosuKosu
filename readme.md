@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/github/license/silvermete0r/QazKosuKosu?style=plastic">
 </a>
 
------
+---
 
 **Main Code:** `main.cpp` file.
 
@@ -35,3 +35,5 @@
 
 ## P.S.
 Don't forget to star and share with your friends. Feel free to fork, edit, report issues, and discuss.
+
+![image](https://github.com/silvermete0r/QazKosuKosu/assets/108217670/700d7087-4a66-47a1-acd0-b167e10be458)
