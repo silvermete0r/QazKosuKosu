@@ -15,7 +15,7 @@
 
 **Main Code:** `main.cpp` file.
 
-**Library Content:** `header/kaz_plus_plus.h` file.
+**Library Content:** `header/qaz_kosu_kosu.h` file.
 
 ``` C++ []
 #include "qaz_kosu_kosu.h"
