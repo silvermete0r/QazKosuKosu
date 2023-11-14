@@ -83,9 +83,12 @@
 #define сырттай_өзгерту static_cast
 #define шың peek
 #define ауыстыру std::swap
+#define төңкеру std::reverse
+#define сұрыптау std::sort
+#define іздеу find
 #define алу get
 #define қатар_алу getline
-#define сұрыптау std::sort
+#define жоласты substr
 #define жолға to_string
 #define санға stoi
 #define сынып class
@@ -106,6 +109,8 @@
 #define артқа_қосу push_back
 #define артқа_орналастыру emplace_back
 #define жұптау make_pair
+#define басы begin
+#define аяғы end
 #define барлығы(x) (x).begin(), (x).end()
 
 /** file operations definition **/
@@ -205,6 +210,15 @@
 үлгі<түраты T>
 ештеңе тез_сұрыптау(стандартты_кіріспе::вектор<T>& arr) {
     тез_сұрыптау(arr, 0, arr.ұзындығы() - 1);
+}
+
+өте_ұзын бинарлы_дәреже(өте_ұзын a, өте_ұзын n) {
+    егер(!n) { қайтару 1; }
+    егер(n & 1) { қайтару бинарлы_дәреже(a, n - 1)* a; }
+    болмаса{
+        өте_ұзын b = бинарлы_дәреже(a, n / 2);
+        қайтару b* b;
+    }
 }
 
 ештеңе иә() { шығыс << "ИӘ\n"; }
