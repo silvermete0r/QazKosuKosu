@@ -1,9 +1,9 @@
 ﻿/* Internal Qaz++ Definition */
 
-/*** 
+/***
 ~ External definition as a library would be: #include "qaz_kosu_kosu.h" ~
 
-Qaz++ is a programming language based on C++ that allows 
+Qaz++ is a programming language based on C++ that allows
 Kazakh-speaking programmers to write code in their native language.
 
 Version: Qaz++ v1.0
@@ -88,9 +88,12 @@ Github: https://github.com/silvermete0r/QazKosuKosu.git
 #define сырттай_өзгерту static_cast
 #define шың peek
 #define ауыстыру std::swap
+#define төңкеру std::reverse
+#define сұрыптау std::sort
+#define іздеу find
 #define алу get
 #define қатар_алу getline
-#define сұрыптау std::sort
+#define жоласты substr
 #define жолға to_string
 #define санға stoi
 #define сынып class
@@ -111,6 +114,8 @@ Github: https://github.com/silvermete0r/QazKosuKosu.git
 #define артқа_қосу push_back
 #define артқа_орналастыру emplace_back
 #define жұптау make_pair
+#define басы begin
+#define аяғы end
 #define барлығы(x) (x).begin(), (x).end()
 
 /** file operations definition **/
@@ -212,6 +217,15 @@ Github: https://github.com/silvermete0r/QazKosuKosu.git
     тез_сұрыптау(arr, 0, arr.ұзындығы() - 1);
 }
 
+өте_ұзын бинарлы_дәреже(өте_ұзын a, өте_ұзын n) {
+    егер(!n) { қайтару 1; }
+    егер(n & 1) { қайтару бинарлы_дәреже(a, n - 1)* a; }
+    болмаса{
+        өте_ұзын b = бинарлы_дәреже(a, n / 2);
+        қайтару b* b;
+    }
+}
+
 ештеңе иә() { шығыс << "ИӘ\n"; }
 ештеңе жоқ() { шығыс << "ЖОҚ\n"; }
 /*--- Don't touch & edit! ---*/
@@ -226,9 +240,16 @@ Github: https://github.com/silvermete0r/QazKosuKosu.git
     // Тез cұрыптау функциясының қолданылу мысалы
     вектор_сан v = { 9, 7, 2, 3, 700, 0, -91, 91, 10, -5 };
     тез_сұрыптау(v);
+    төңкеру(барлығы(v));
     үшін(сан i = 0; i < v.ұзындығы(); i++) {
         шығыс << v[i] << " ";
     }
+    шығыс << жаңа_жол;
+
+    // Бинарлы дәрежеге шығару мысалы
+    сан x = 127;
+    сан y = 25;
+    шығыс << бинарлы_дәреже(x, y) << жаңа_жол;
 
     қайтару 0;
 }
